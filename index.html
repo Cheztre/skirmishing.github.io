@@ -1,9 +1,55 @@
 <!DOCTYPE html>
-<html lang="eu-us">
+<html>
 <head>
 <meta charset="utf-8">  
 <title> Contact Information </title>
-<!-- Contact menu -->
+
+<!-- -----------------------------------------------Header Menu---------------------------------------------- -->
+<style type="text/css">
+
+    #fontContentHeaderMenu {
+    font-family: Arial;
+    font-size: medium;
+    font-weight: normal;
+    background-color: #ff33cc;
+    border-radius: 15px;
+    padding: 10px;
+    text-align: center;
+        
+    }
+    
+    .buttonStyle2 {
+        border: thin solid #cccccc ;
+        background-color # ; 
+        color: # ;
+        cursor: pointer;
+    }
+    
+    .buttonStyle2:hover {
+        border: thin solid # ;
+        background-color: # ;
+        color: # ;
+        cursor: pointer;
+    }
+    
+    .buttonSytle2:active {
+        border: thin solid # ;
+        background-color: # ;
+        color: # ;
+        cursor: pointer;
+    }
+    
+    </style>
+</head>
+
+<body>
+    <div id="fontContentHeaderMenu">
+       
+    </div>
+</body>
+    
+    
+<!-- --------------------------Contact Menu------------------------------------------ -->
 <style type="text/css">
     
     #fontContentContact {
@@ -44,8 +90,24 @@
     </style>  
 </head>
 
+<body>
+<div id="fontContentContact">
+<p id="contactText">Click for contact informatin regarding the website.</p>
+<button id="clickButtonContact" class="buttonStyle">Contact Information</button>
 
-<!-- Side menu -->
+</div>
+
+<script>
+    var myContactButton = document.getElementById("clickButtonContact"); 
+    var myContactText = document.getElementById("contactText");
+    myContactButton.addEventListener('click', contactInformation , false)
+    function contactInformation() {
+	myContactText.textContent = " E-mail for support at john_jjoe@outlook.com for reports, issues, and questions. ";
+    }
+</script>   
+</body>
+
+<!-- ----------------------------------------------Side Menu---------------------------------------------- -->
 <head>
     <style type="text/css">
         
@@ -57,25 +119,82 @@
     border-radius: 20px;
     padding: 15px;
     text-align: center;
+    background-position: left center;
     }
+    
+    .buttonStyle3 {
+        border: thin solid #cccccc ;
+        background-color # ; 
+        color: # ;
+        cursor: pointer;
+    }
+    
+    .buttonStyle3:hover {
+        border: thin solid # ;
+        background-color: # ;
+        color: # ;
+        cursor: pointer;
+    }
+    
+    .buttonSytle3:active {
+        border: thin solid # ;
+        background-color: # ;
+        color: # ;
+        cursor: pointer;
+    }
+    
     
     
     </style>
 </head>
 
+<body>
+    <div id="fontContentSideMenu">
+        
+    </div>
+</body>
+
+<!-- -----------------------------------------------------Main Menu--------------------------------- -->
+<head>
+    <style type="text/css">
+        
+        #fontContentMainMenu {
+    font-family: Arial;
+    font-size: medium;
+    font-weight: normal;
+    text-align: center;
+    background-position: center;
+    }
+    
+    .buttonStyle4 {
+        border: thin solid #000000 ;
+        background-color #000000 ; 
+        color: #ffffff ;
+        cursor: pointer;
+    }
+    
+    .buttonStyle4:hover {
+        border: thin solid #000000 ;
+        background-color: #000000 ;
+        color: #ffffff ;
+        cursor: pointer;
+    }
+    
+    .buttonSytle4:active {
+        border: thin solid #000000 ;
+        background-color: #000000 ;
+        color: #ffffff ;
+        cursor: pointer;
+    }
+    
+    </style>
+</head>
 
 <body>
-<div id="fontContentContact">
-<p id="contactText">Click for contact informatin regarding the website.</p>
-<button id="clickButtonContact" class="buttonStyle">Contact Information</button>
-</div>
-<script>
-    var myContactButton = document.getElementById("clickButtonContact"); 
-    var myContactText = document.getElementById("contactText");
-    myContactButton.addEventListener('click', contactInformation , false)
-    function contactInformation() {
-	myContactText.textContent = " E-mail for support at john_jjoe@outlook.com for reports, issues, and questions. ";
-    }
-</script>   
+    <div id="fontContentMainMenu">
+        <div style="background-color:green;color:white;padding:20px;"></div>
+        <div style="background-size: 100px 100px"></div>
+    </div>
 </body>
+<!-- -----------------------------------------------End------------------------------------------ -->
 </html>
