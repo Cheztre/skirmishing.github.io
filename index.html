@@ -1,1 +1,81 @@
-this is my site
+<!DOCTYPE html>
+<html lang="eu-us">
+<head>
+<meta charset="utf-8">  
+<title> Contact Information </title>
+<!-- Contact menu -->
+<style type="text/css">
+    
+    #fontContentContact {
+    font-family: Arial;
+    font-size: medium;
+    font-weight: normal;
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 10px;
+    text-align: center;
+    }
+    
+    .buttonStyle {
+        border-radius: 5px;
+        border: thin solid #737373;
+        padding: 5px ;
+        background-color: #ffffff;
+        font-family: Arial;
+        font-weight: bold;
+        color: #323D3D;
+        width: 80px;
+    }
+    
+    .buttonStyle:hover {
+        border: thin solid #999999;
+        background-color: #e6ffff;
+        color: #323D3D;
+        cursor: pointer;
+    }
+    
+    .buttonStyle:active {
+        border: thin solid #ffffff;
+        background-color: #ffffff;
+        color: #323D3D;
+        cursor:pointer;
+    }
+    
+    </style>  
+</head>
+
+
+<!-- Side menu -->
+<head>
+    <style type="text/css">
+        
+        #fontContentSideMenu {
+    font-family: Arial;
+    font-size: medium;
+    font-weight: normal;
+    background-color: #000000;
+    border-radius: 20px;
+    padding: 15px;
+    text-align: center;
+    }
+    
+    
+    </style>
+</head>
+
+
+<body>
+<div id="fontContentContact">
+<p id="contactText">Click for contact informatin regarding the website.</p>
+<button id="clickButtonContact" class="buttonStyle">Contact Information</button>
+</div>
+<script>
+    var myContactButton = document.getElementById("clickButtonContact"); 
+    var myContactText = document.getElementById("contactText");
+    myContactButton.addEventListener('click', contactInformation , false)
+    function contactInformation() {
+	myContactText.textContent = " E-mail for support at john_jjoe@outlook.com for reports, issues, and questions. ";
+    }
+</script>   
+</body>
+</html>
